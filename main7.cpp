@@ -12,9 +12,6 @@ int main() {
 		if (attemptPin == pin) {
 			cout << "You are logged in!";
 			break;
-		} else if (i==3) {
-			cout << "You are blocked!";
-			break;
 		} else{
 			cout << "You entered wrong pin, try again!" <<endl;
 		}
