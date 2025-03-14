@@ -31,6 +31,28 @@ int main() {
 	}
 }
 
+// Triangle shape star pattern
+//	int m=0, lim;
+//	while (m==0) {
+//		cout << "Enter number of max stars(in odd number) for Triangle shape\n";
+//		cin >> lim;
+//		m = lim%2;
+//	}
+//	int maxLine = (lim/2)+1;
+//	int s=maxLine, t=maxLine;
+//	for (int i=1; i<=((lim/2)+1); i++) {
+//		for (int j=1; j<=lim; j++) {
+//			if (j>=s && j<=t) {
+//				cout << "*";
+//			} else{
+//				cout << " ";
+//			}
+//		}
+//		s--;
+//		t++;	
+//		cout<<endl;
+//	}
+
 // Diamond shape star pattern
 //	int m=0, lim;
 //	while (m==0) {
