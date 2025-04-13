@@ -10,8 +10,14 @@ ISO C++ 2011 standard. This support is currently experimental, and must be \
 enabled with the -std=c++11 or -std=gnu++11 compiler options.)
 */
 
+/*
+For Promo code regex is used. Regex had been taught by Sir Asfand Akbar during online sessions. 
+*/
+
 
 // Functions Declaration
+
+void greet();
 
 bool validateInput(float);
 
@@ -34,6 +40,8 @@ int main(){
 	float total=0;
 	char isPromo;
 	
+	greet();
+	
 	while (true) {
 		total+=cart();
 		if (!shopMore())
@@ -54,6 +62,13 @@ int main(){
 
 
 // Functions Definition
+
+void greet() {
+	cout <<"\n-----------------------------\n" 
+		 <<"---------WELLCOME TO---------\n"
+		 <<"ABU USAMA KHAN'S ONLINE MART\n"
+		 <<"-----------------------------\n\n";
+}
 
 bool validateInput(int val) {
     if(val>0)
@@ -120,5 +135,6 @@ bool checkPromo(string promo) {
 
 void displayFinalMessage(float tot) {
 	cout <<"\nYour Total after discount is PKR " <<tot 
-		 <<"\n\nPlease pay this amount to counter!\n";
+		 <<"\n\nPlease pay this amount to counter!\n"
+		 <<"\n------------THE END OF PROGRAM---------\n";
 }
